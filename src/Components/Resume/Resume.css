@@ -1,0 +1,19 @@
+.container{
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background-color: #dcdde1;
+}
+section{
+    border-bottom: 5px solid #44bd32;
+
+}
+article{
+    border-bottom: 2px solid #44bd32;
+}
+
+.title{
+    font-family: cursive;
+    border-bottom: 2px solid #9c88ff;
+}

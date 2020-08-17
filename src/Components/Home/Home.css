@@ -1,0 +1,36 @@
+.container {
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color:#ecf0f1;
+  
+  }
+  
+  
+  
+  .jumbotron {
+    border-bottom: 5px solid #44bd32;
+  }
+  .img-fluid{
+    border-radius: 50%;
+     
+  }
+  .pics div img {
+    height: 120px;
+    width: 150px;
+  }
+  
+  .justify-content-between{
+   border-top: 5px solid #44bd32;
+  
+  }
+  footer{
+    height: 50px;
+    background-color: #44bd32;
+    padding: 20px;
+    border-top: 5px solid;
+  }
+  .framework{
+  padding-left: 5rem;
+  }
+  

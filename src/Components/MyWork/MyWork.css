@@ -1,0 +1,42 @@
+.body {
+    padding: 3rem;
+  }
+  .card {
+    height: 700px;
+    margin-top: 1.5rem;
+    border: 2px solid #44bd32;
+  }
+  .card img {
+    height: 300px;
+    border-bottom: 2px solid #44bd32;
+  }
+  .card .card-body h5 {
+    background-color: #dfe6e9;
+    text-transform: uppercase;
+  }
+  .card .card-body .card-text {
+    text-align: center;
+  }
+  .card p {
+    font-size: 20px;
+    font-family: "Oranienbaum", serif;
+  }
+  
+  .card .tech,
+  .card-footer small,
+  a {
+    text-transform: uppercase;
+  }
+  .card .card-footer .github {
+    text-decoration: none;
+  }
+  footer {
+    background-color: #44bd32;
+    min-width: 100vh;
+    padding: 0;
+    height: 5rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  
