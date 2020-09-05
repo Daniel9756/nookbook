@@ -13,7 +13,7 @@ class Home extends Component {
         <div className="Profile">
           <div className="jumbotron">
             <div className="row">
-              <div className="col-sm-6">
+              <div className="col-md-6">
                 <img
                   src="images/myself-1.jpg"
                   class="img-fluid"
@@ -22,8 +22,8 @@ class Home extends Component {
                   height="500"
                 />
               </div>
-              <div className="col-sm-6">
-                <h1 class="display-4">Cornelius Eze</h1>
+              <div className="col-md-6">
+                <h3 class="text-center">Cornelius Eze</h3>
                 <p>
                   A software developer who is knowledgeable in HTML, CSS,
                   Bootstrap, JavaScript, React, Jquery, Node.js/Express, Python, Django, PHP, Laravel, Webpack,
@@ -41,59 +41,59 @@ class Home extends Component {
           </div>
         </div>
 
-        <div className="framework">
-          <h5 className="text-center my-4">LANGUAGES AND FRAMEWORKS</h5>
-          <div className="row  my-5 framework">
-            <div className="col-sm-4">
+        <div className="col-12">
+          <h5 className="my-4">LANGUAGES AND FRAMEWORKS</h5>
+          <div className="row  my-5 framework p-0">
+            <div className="col-md-4">
               <h5>FRONT END</h5>
               <span>
                 <p> JavaScript</p> <FontAwesomeIcon icon={["fab", "js"]} />
               </span>
-              <span className="col-sm-2">
+              <span className="col-sm-12">
                 <p> React</p> <FontAwesomeIcon icon={["fab", "react"]} />
               </span>
-              <span className="col-sm-2">
+              <span className="col-sm-12">
                 <p> Jquery</p> <FontAwesomeIcon icon={["fab", "jquery"]} />
               </span>
-              <span className="col-sm-2">
+              <span className="col-sm-12">
                 <p>Bootstrap</p> <FontAwesomeIcon icon={["fab", "bootstrap"]} />
               </span>
             </div>
-            <div className="col-sm-4">
+            <div className="col-md-4">
               <h5>BACK END</h5>
-              <span className="col-sm-2">
+              <span className="col-sm-12">
                 <p>Node/Express </p>
                 <FontAwesomeIcon icon={["fab", "node"]} />
               </span>
-              <span className="col-sm-2">
+              <span className="col-sm-12">
                 <p>PHP </p>
                 <FontAwesomeIcon icon={["fab", "PHP"]} />
               </span>
-              <span className="col-sm-2">
+              <span className="col-sm-12">
                 <p>Laravel </p>
                 <FontAwesomeIcon icon={["fab", "laravel"]} />
               </span>
-              <span className="col-sm-2">
+              <span className="col-sm-12">
                 <p>Python</p> <FontAwesomeIcon icon={["fab", "python"]} />
               </span>
             </div>
-            <div className="col-sm-4">
+            <div className="col-md-4">
               <h5>DATABASES</h5>
 
-              <span className="col-sm-2">
+              <span className="col-sm-12">
                 <p>MongoDB</p> <FontAwesomeIcon icon={["fab", "mdb"]} />
               </span>
-              <span className="col-sm-2">
+              <span className="col-sm-12">
                 <p>PostgreSQL</p>
               </span>
-              <span className="col-sm-2">
+              <span className="col-sm-12">
               <p>MySQl</p> <FontAwesomeIcon icon={["fab", "mysql"]} />
 
               </span>
             </div>
           </div>
         </div>
-        <div className="images">
+        <div className="col-12">
           <div className="row justify-content-between my-5">
             <div class="col-sm-3 pics">
               <div className="text-center">
@@ -179,7 +179,9 @@ class Home extends Component {
             </div>
           </div>
         </div>
-        <footer className="text-center">copyright@Cornelius2020</footer>
+        <div className="text-center">
+        <footer>copyright@Cornelius2020</footer>
+        </div>
       </div>
     );
   }

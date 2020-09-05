@@ -1,0 +1,9 @@
+#toggle {
+    cursor: pointer;
+    color: black;
+    font-size: 60px;
+    margin-left: 20px;
+    background: transparent;
+    border: none;
+    padding: 10px;
+}

@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import Home from './Components/Home/Home';
 import Header from './Components/Header/Header'
 import Resume from './Components/Resume/Resume'
@@ -9,21 +9,34 @@ import { fab } from '@fortawesome/free-brands-svg-icons'
 import {fas, faCheckSquare, faCoffee } from '@fortawesome/free-solid-svg-icons'
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Contact from './Components/Contacts/Contacts';
+import Sidebar from './Components/Sidebar/Sidebar';
+
 
  
 library.add(fab, fas, faCheckSquare, faCoffee)
 
 
 
-class App extends Component {
-  state = {  }
-  render() {
+function App() {
+  const [ sidebarOpen, setSidebarOpen ] = useState(false)
+  
+const sidebarHandler = () => {
+  if(!sidebarOpen){
+    setSidebarOpen(true)
+  }else{
+    setSidebarOpen(false)
+  }
+}
+let sidebar
+if(sidebarOpen){
+  sidebar =  <Sidebar sidebar={"sidebar"} />
+}
     const routes = [
      
       {
         path: "/",
         exact: true,
-        sidebar: () => <div>HOME</div>,
+        itembar: () => <div>HOME</div>,
         main: () => (
           <>
             <Home />
@@ -32,7 +45,7 @@ class App extends Component {
       },
       {
         path: "/Resume",
-        sidebar: () => <div>RESUME</div>,
+        itembar: () => <div>RESUME</div>,
         main: () => (
           <>
             <Resume />
@@ -41,7 +54,7 @@ class App extends Component {
       },
       {
         path: "/MyWork",
-        sidebar: () => <div>MyWork</div>,
+        itembar: () => <div>MyWork</div>,
         main: () => (
           <>
             <MyWork />
@@ -50,7 +63,7 @@ class App extends Component {
       },
       {
         path: "/Contacts",
-        sidebar: () => <div>Contact</div>,
+        itembar: () => <div>Contact</div>,
         main: () => (
           <>
             <Contact />
@@ -61,8 +74,8 @@ class App extends Component {
     return ( 
       <Router>
         <div className="app">
-          <Header />
-          
+          <Header  open={sidebarHandler}/>
+         
           <Switch>
             {routes.map((route, index) => (
               <Route
@@ -77,7 +90,6 @@ class App extends Component {
       </Router>
      );
   }
-}
  
 
 

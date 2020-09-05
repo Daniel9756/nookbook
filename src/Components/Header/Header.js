@@ -4,7 +4,7 @@ import './Header.css'
 import { Link } from "react-router-dom";
 
 
-function Header() {
+function Header(props) {
 
     return(
         <div>
@@ -13,14 +13,16 @@ function Header() {
             class="navbar-toggler"
             type="button"
             data-toggle="collapse"
-            data-target="#navbarNav"
-            aria-controls="navbarNav"
+            // data-target="#navbarNav"
+            // aria-controls="navbarNav"
             aria-expanded="false"
             aria-label="Toggle navigation"
+            onClick={props.open}
+
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="collapse navbar-collapse">
             <ul class="navbar-nav">
               <li class="nav-item">
                 <Link class="nav-link" to="/">
