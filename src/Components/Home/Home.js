@@ -28,7 +28,7 @@ class Home extends Component {
                   A software developer who is knowledgeable in HTML, CSS,
                   Bootstrap, JavaScript, React, Jquery, Node.js/Express, Python, Django, PHP, Laravel, Webpack,
                   PostgreSQL, MongoDB, MySQl etc. A true team player as well as
-                  independent personnel offering 3 years of experience in the
+                  independent personnel offering 4 years of experience in the
                   software industry. Committed to meeting project milestones in
                   a timely fashion. Desires an opportunity to develop all kinds
                   of applications for a winning enterprise.{" "}
