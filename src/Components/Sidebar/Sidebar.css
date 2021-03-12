@@ -1,5 +1,5 @@
 .sidebar {
-    height: 40vh;
+    height: 30vh;
     padding-left: 10px;
     background-color: #44bd32;
     opacity: 1;
@@ -13,7 +13,7 @@
     animation: sidebar-open 0.8s forwards
 }
 
-.sidebar.close{
+.sidebarclose{
     left: -100%;
 }
 

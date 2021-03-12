@@ -29,7 +29,7 @@ const sidebarHandler = () => {
 }
 let sidebar
 if(sidebarOpen){
-  sidebar =  <Sidebar sidebar={"sidebar"} />
+  sidebar =  <Sidebar sidebar={"sidebar"} onClose={sidebarHandler} />
 }
     const routes = [
      
@@ -39,6 +39,7 @@ if(sidebarOpen){
         itembar: () => <div>HOME</div>,
         main: () => (
           <>
+
             <Home />
           </>
         ),
@@ -75,7 +76,7 @@ if(sidebarOpen){
       <Router>
         <div className="app">
           <Header  open={sidebarHandler}/>
-         
+         {sidebar}
           <Switch>
             {routes.map((route, index) => (
               <Route

@@ -3,17 +3,13 @@
    
     align-items: center;
     justify-content: center;
-    margin-top: 2rem;
-    margin-bottom: 20rem;
-    margin-right: 25rem;
-    margin-left: 25rem;
-
-
+    margin-top: 12rem;
+ 
 }
 .contact-item{
 align-items: center;
 justify-content: center;
-min-width: 400px;
+/* min-width: 400px; */
 min-height: 40vh;
 background-color: #44bd32;
 border-radius: 1.5rem;
@@ -31,4 +27,9 @@ font-size: 50px;
 ul li:hover{
     text-decoration: none;
     outline: none;
+}
+
+.h3{
+    background-color: rgb(220, 245, 231);
+    margin: 0;
 }

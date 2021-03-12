@@ -1,6 +1,18 @@
 import React, { Component } from "react";
 import "./Home.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { FaNodeJs, FaBootstrap } from "react-icons/fa";
+import {
+  SiJquery,
+  SiGraphql,
+  SiTypescript,
+  SiDjango,
+  SiJavascript,
+  SiReact,
+  SiMaterialUi,
+  SiStyledComponents,
+  SiReactos,SiBasecamp,SiMysql,SiMongodb,SiFirebase,SiPostgresql
+} from "react-icons/si";
 
 // import { Jumbotron, Container, Button,  } from 'react-bootstrap';
 
@@ -8,8 +20,8 @@ class Home extends Component {
   state = {};
   render() {
     return (
+      <>
       <div className="container">
-        
         <div className="Profile">
           <div className="jumbotron">
             <div className="row">
@@ -25,13 +37,13 @@ class Home extends Component {
               <div className="col-md-6">
                 <h3 class="text-center">Cornelius Eze</h3>
                 <p>
-                  A software developer who is knowledgeable in HTML, CSS,
-                  Bootstrap, JavaScript, React, Jquery, Node.js/Express, Python, Django, PHP, Laravel, Webpack,
-                  PostgreSQL, MongoDB, MySQl etc. A true team player as well as
-                  independent personnel offering 4 years of experience in the
-                  software industry. Committed to meeting project milestones in
-                  a timely fashion. Desires an opportunity to develop all kinds
-                  of applications for a winning enterprise.{" "}
+                  I’m a full stack software developer with extensive knowledge
+                  in the field. A software architect and a designer with an eye
+                  on aesthetics. A true team player as well as independent
+                  personnel offering 5 years of experience in the software
+                  industry. Committed to meeting project milestones in a timely
+                  fashion. Desires an opportunity to develop all kinds of
+                  applications for a winning enterprise.
                 </p>
                 <a class="btn btn-primary btn-lg" href="/Resume" role="button">
                   Profile
@@ -45,51 +57,65 @@ class Home extends Component {
           <h5 className="my-4">LANGUAGES AND FRAMEWORKS</h5>
           <div className="row  my-5 framework p-0">
             <div className="col-md-4">
-              <h5>FRONT END</h5>
-              <span>
-                <p> JavaScript</p> <FontAwesomeIcon icon={["fab", "js"]} />
-              </span>
-              <span className="col-sm-12">
-                <p> React</p> <FontAwesomeIcon icon={["fab", "react"]} />
-              </span>
-              <span className="col-sm-12">
-                <p> Jquery</p> <FontAwesomeIcon icon={["fab", "jquery"]} />
-              </span>
-              <span className="col-sm-12">
-                <p>Bootstrap</p> <FontAwesomeIcon icon={["fab", "bootstrap"]} />
-              </span>
+              <h5>FULL-STACK</h5>
+              <div className="d-flex align-items-center">
+                <p className="m-2"> JavaScript</p> <SiJavascript />
+              </div>
+              <div className="d-flex align-items-center">
+                <p className="m-2"> React & React-Native</p> <SiReact />
+              </div>
+              <div className="d-flex align-items-center">
+                <p className="m-2"> Jquery</p> <SiJquery />
+              </div>
+              <div className="d-flex align-items-center">
+                <p className="m-2">Node.js</p> <FaNodeJs />
+              </div>
+              <div className="d-flex align-items-center">
+                <p className="m-2">GraphQl/Apollo</p> <SiGraphql />
+              </div>
+              <div className="d-flex align-items-center">
+                <p className="m-2">TypeScript</p> <SiTypescript />
+              </div>
+              <div className="d-flex align-items-center">
+                <p className="m-2">Django</p> <SiDjango />
+              </div>
             </div>
             <div className="col-md-4">
-              <h5>BACK END</h5>
-              <span className="col-sm-12">
-                <p>Node/Express </p>
-                <FontAwesomeIcon icon={["fab", "node"]} />
-              </span>
-              <span className="col-sm-12">
-                <p>PHP </p>
-                <FontAwesomeIcon icon={["fab", "PHP"]} />
-              </span>
-              <span className="col-sm-12">
-                <p>Laravel </p>
-                <FontAwesomeIcon icon={["fab", "laravel"]} />
-              </span>
-              <span className="col-sm-12">
-                <p>Python</p> <FontAwesomeIcon icon={["fab", "python"]} />
-              </span>
+              <h5>UI FRAMEWORK</h5>
+              <div className="d-flex align-items-center">
+                <p className="m-2"> Bootstrap</p> <FaBootstrap />
+              </div>
+              <div className="d-flex align-items-center">
+                <p className="m-2">Material-UI</p> <SiMaterialUi />
+              </div>
+              <div className="d-flex align-items-center">
+                <p className="m-2">Styled-Components</p> <SiStyledComponents />
+              </div>
+              <div className="d-flex align-items-center">
+                <p className="m-2">Base-Web</p> <SiBasecamp />
+              </div>
+              <div className="d-flex align-items-center">
+                <p className="m-2">React-Reveal</p> <SiReactos />
+              </div>
+              <div className="d-flex align-items-center">
+                <p className="m-2">React-Spring</p> <SiReactos />
+              </div>
+              <div className="d-flex align-items-center">
+                <p className="m-2">React-Storybook</p> <SiReactos />
+              </div>
             </div>
             <div className="col-md-4">
               <h5>DATABASES</h5>
-
-              <span className="col-sm-12">
-                <p>MongoDB</p> <FontAwesomeIcon icon={["fab", "mdb"]} />
-              </span>
-              <span className="col-sm-12">
-                <p>PostgreSQL</p>
-              </span>
-              <span className="col-sm-12">
-              <p>MySQl</p> <FontAwesomeIcon icon={["fab", "mysql"]} />
-
-              </span>
+              <div className="d-flex align-items-center">
+                <p className="m-2">MOngoDB</p> <SiMongodb />
+              </div><div className="d-flex align-items-center">
+                <p className="m-2">MySQL</p> <SiMysql />
+              </div><div className="d-flex align-items-center">
+                <p className="m-2">FireBase</p> <SiFirebase />
+              </div><div className="d-flex align-items-center">
+                <p className="m-2">postgresql</p> <SiPostgresql />
+              </div>
+              
             </div>
           </div>
         </div>
@@ -108,21 +134,21 @@ class Home extends Component {
             <div class="col-sm-3 pics">
               <div className="text-center">
                 <img
-                  src="images/book.PNG"
+                  src="images/realEstate.PNG"
                   class="img-fluid rounded my-5"
-                  alt="civillib"
+                  alt="realEstate"
                 />
-                <h5 class="title">Book Rater</h5>
+                <h5 class="title">RealEstate Website</h5>
               </div>
             </div>
             <div class="col-sm-3 pics">
               <div className="text-center">
                 <img
-                  src="images/quote-2.PNG"
+                  src="images/cms.PNG"
                   class="img-fluid rounded my-5"
-                  alt="quote"
+                  alt="CMS"
                 />
-                <h5 class="title">Quote app</h5>
+                <h5 class="title">CMS WEBSITE</h5>
               </div>
             </div>
             <div class="col-sm-3 pics">
@@ -136,53 +162,12 @@ class Home extends Component {
               </div>
             </div>
           </div>
-          <div className="row my-5">
-            <div class="col-sm-3 pics">
-              <div className="text-center">
-                <img
-                  src="images/pix2.PNG"
-                  class="img-fluid rounded my-5"
-                  alt="animal"
-                />
-                <h5 class="title">Predators</h5>
-              </div>
-            </div>
-            <div class="col-sm-3 pics">
-              <div className="text-center">
-                <img
-                  src="images/pix1.PNG"
-                  class="img-fluid rounded my-5"
-                  alt="brother"
-                />
-                <h5 class="title">Family</h5>
-              </div>
-            </div>
-            <div class="col-sm-3 pics">
-              <div className="text-center">
-                <img
-                  src="images/digitalClock-1.PNG"
-                  class="img-fluid rounded my-5"
-                  alt="clock"
-                />
-                <h5 class="title">Digital Clock</h5>
-              </div>
-            </div>
-            <div class="col-sm-3 pics">
-              <div className="text-center">
-                <img
-                  src="images/calc-3.PNG"
-                  class="img-fluid rounded my-5"
-                  alt="calculator"
-                />
-                <h5 class="title">Calculator</h5>
-              </div>
-            </div>
-          </div>
+         
         </div>
-        <div className="text-center">
-        <footer>copyright@Cornelius2020</footer>
-        </div>
+          <footer className="col-sm-12 text-center justify-content-center align-items-center">copyright@Cornelius2020</footer>
       </div>
+        
+        </>
     );
   }
 }
